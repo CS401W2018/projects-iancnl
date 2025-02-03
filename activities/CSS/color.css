@@ -1,0 +1,31 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(96, 187, 152);
+}
+footer  {
+    color:blueviolet
+}
+#first-par {
+    color:aqua
+}
+.blue {
+    color: blue;
+}
+.bigger {
+    font-size: 18pt;
+}
+.pink {
+    color: pink;
+}
+.purple {
+    color: purple;
+}
+.big {
+    font-size: 15pt;
+}
+.underline {
+    text-decoration: underline;
+}
+.itallic {
+    font-style: italic;
+}
