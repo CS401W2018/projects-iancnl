@@ -1,0 +1,20 @@
+body {
+    font-family:  Arial, Helvetica, sans-serif;
+    background: url('Hi.jpg') rgb(29, 29, 216);  
+}
+header { 
+    font-size: 20pt;
+}
+nav {
+    color:blue;
+    font-size: 18pt;
+}
+main {
+    color:purple;
+    font-size: 15pt;
+    background: url('HongKong.jpg') top right no-repeat;
+}
+
+.mylist{
+    list-style-image: url(HongKong3.jpg);
+    }
