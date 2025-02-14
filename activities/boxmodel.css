@@ -1,0 +1,26 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgb(78, 231, 111);
+    padding: 60px;
+    margin: 30px;
+    width: 80%;
+    height: 1cm;
+    overflow:visible;
+}
+header h1 {
+    border: 5px dotted #100;
+}
+main p {
+    background-color: yellow;
+    padding: 20px;
+    margin: 10px;
+}
+.DL img {
+    width: 600px;
+    border: thin solid black;
+    text-align: center;
+    margin-left: auto;
+}
