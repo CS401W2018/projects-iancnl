@@ -13,7 +13,6 @@ header {
 
 nav a {
     background-color: pink;
-    display: block;
     padding: 10px 5px;
     border-bottom: thin solid #fff;
     box-shadow: 20px 10px 10px rgb(6, 204, 95);
