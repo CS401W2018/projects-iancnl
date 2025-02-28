@@ -76,6 +76,11 @@ footer {
     color: rgb(23, 26, 190);
 }
 .wrapper {
-    width: 850px;  
+    max-width: 850px; 
     margin: 0 auto; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgb(0, 0, 0); 
+    background-color: white; 
+    text-align: 
+    overflow: 
 }
