@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 32pt;
+    background: url('Hi.jpg');
+    background-size: cover;
+    padding: 70px;
+    text-align: center;
+    color: rgb(51, 60, 196);
+}
+
+nav {
+    background: url('Hi.jpg');
+    display: flex;
+    justify-content: space-evenly;
+    padding: 80px;
+    background-color: rgb(228, 212, 225);
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: rgb(13, 120, 170);
+    font-weight: bold;
+    padding: 80px;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+aside {
+    flex: 1;
+    padding: 40px;
+    background-color: #fddcdc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+main {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #64c4bc;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    width: 100%;
+}
+
+.card {
+    text-align: center;
+    background-color: hsl(54, 93%, 58%);
+    box-shadow: 5px 5px 5px rgb(46, 33, 117);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    padding: 20px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: blue;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 10px;
+}
