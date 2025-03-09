@@ -43,3 +43,9 @@ nav a:hover{
 .card img{
     width: 100%;
 }
+
+@media Only screen AND (max-width:600px){
+    header {
+        background-color: #000;
+    }
+}

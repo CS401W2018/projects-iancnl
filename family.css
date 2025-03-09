@@ -1,0 +1,188 @@
+/* General Styles */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    font-family: 'Courier New', Courier, monospace;  
+    font-size: 32pt;
+    background-color: #fff;
+    padding: 70px;
+    text-align: center;
+    color: rgb(51, 60, 196);
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 15px;
+    background-color: rgb(228, 212, 225);
+    margin: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+nav a {
+    color: rgb(13, 120, 170);
+    font-weight: bold;
+    padding: 15px 20px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+/* Main Layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Sidebar */
+aside {
+    flex: 1;
+    padding: 20px;
+    background-color: #fddcdc;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+}
+
+/* Sidebar Image + Caption */
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figure img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+figcaption {
+    font-style: italic;
+    color: #555;
+    margin-top: 5px;
+}
+
+/* Sidebar List */
+aside ul {
+    list-style: square;
+    padding-left: 20px;
+}
+
+/* Main Content */
+main {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    min-height: 100vh;
+}
+
+/* Card Container */
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    width: 100%;
+}
+
+/* Card Styling */
+.card {
+    text-align: center;
+    background-color: hsl(54, 93%, 58%);
+    box-shadow: 5px 5px 5px rgb(46, 33, 117);
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #ddd;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Footer Links */
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: blue;
+}
+
+/* Print-friendly version */
+@media print {
+    nav {
+        display: none; /* Hide navigation when printing */
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .card {
+        box-shadow: none; /* Remove shadows to save ink */
+        background-color: white;
+    }
+}
+
+/* Mobile-friendly version */
+@media (max-width: 768px) {
+    /* Stack navigation links vertically */
+    nav {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    aside, main {
+        width: 100%;
+    }
+
+    .card-container {
+        display: flex;
+        flex-direction: column;
+    }
+}
