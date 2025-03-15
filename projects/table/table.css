@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #cf0101;
+}
+
+/* Header, Nav, Footer */
+header, nav, footer {
+    background-color: rgb(31, 104, 238);
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Flexbox Layout */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Right Sidebar */
+.sidebar {
+    flex: 1;
+    background: #f8fc2c;
+    padding: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid #0a0a0a;
+    padding: 10px;
+    text-align: left;
+}
+
+/* Table Header */
+th {
+    background-color: #3cdd64;
+    color: white;
+}
+
+/* Alternating Row Colors */
+tr:nth-child(even) {
+    background-color: #77ffab;
+}
+
+tr:nth-child(odd) {
+    background-color: #bbe033;
+}
