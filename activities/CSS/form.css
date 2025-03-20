@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background-color: rgba(193, 243, 55, 0.658);
+}
+
+fieldset {
+    background-color: rgb(155, 149, 236);
+}
+
+legend {
+    background-color: rgb(21, 137, 214);
+    color: white;
+    padding: 20px;
+}
+
+.form-row input :not([type="submit"]) {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: wheat;
+}
+
+.form-row input :not([type="submit"]) {
+    background-color: #FFF;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
