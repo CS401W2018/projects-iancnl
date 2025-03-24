@@ -72,5 +72,14 @@
     <footer>
         <p>&copy; 2025 Ian Chong&copy; BYU-Hawaii Web Design</p>
     </footer>
+    <script>
+        document.getElemenById('myFrom').addEventListener('submit',function(event){
+            event.preventDefault();
+            alert("Form Submitted")
+
+            const fullname = document.getElementById('fullname').value;
+            console.log(fullname);
+        });
+    </script>
 </body>
 </html>
