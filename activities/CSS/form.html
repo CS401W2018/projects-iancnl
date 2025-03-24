@@ -63,10 +63,14 @@
 
         <h2>Questions:</h2>
 
-        <h3>What are different ways to style your form?</h3>
-        <p>an style a form using inline CSS, internal or external CSS, frameworks like Bootstrap, pseudo-classes, Flexbox/Grid, and JavaScript.</p>
-        <h3>2. Why does the professor like to use flex?</h3>
-        <p>Professors like Flexbox because it makes layout alignment easy, responsive, and flexible.</p>
+        <h3>What is JavaScript? How did it get its name?</h3>
+        <p>JavaScript is a programming language used for creating dynamic and interactive web content, and it got its name from Netscape marketing strategy to capitalize on Java popularity</p>
+        <h3>What are the two ways you can run JavaScript?</h3>
+        <p>JavaScript can be run in a web browser using the built-in JavaScript engine or in a server environment using Node.js.</p>
+        <h3>What was the most popular front-end js library?</h3>
+        <p>The most popular front-end JavaScript library has been React.js, widely used for building interactive user interfaces and developed by Facebook</p>
+        <h3>What is the most popular front-end js library today?</h3>
+        <p>As of March 2025, React.js continues to be the most popular front-end JavaScript library, widely adopted for building user interfaces.</p>
     </main>
 
     <footer>
@@ -78,7 +82,26 @@
             alert("Form Submitted")
 
             const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('pass').value;
+
+            if (!fullname) {
+                alert("you need to enter your name.");
+                return;
+            }
+            
+            if (!age || age<18) {
+                alert("you need to be 18");
+                return;
+            }
+
+            const formData = {
+                fullame: fullname,
+                email: email,
+                password: pass
+            }
             console.log(fullname);
+            
         });
     </script>
 </body>
