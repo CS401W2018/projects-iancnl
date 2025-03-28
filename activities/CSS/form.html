@@ -63,14 +63,10 @@
 
         <h2>Questions:</h2>
 
-        <h3>What is JavaScript? How did it get its name?</h3>
-        <p>JavaScript is a programming language used for creating dynamic and interactive web content, and it got its name from Netscape marketing strategy to capitalize on Java popularity</p>
-        <h3>What are the two ways you can run JavaScript?</h3>
-        <p>JavaScript can be run in a web browser using the built-in JavaScript engine or in a server environment using Node.js.</p>
-        <h3>What was the most popular front-end js library?</h3>
-        <p>The most popular front-end JavaScript library has been React.js, widely used for building interactive user interfaces and developed by Facebook</p>
-        <h3>What is the most popular front-end js library today?</h3>
-        <p>As of March 2025, React.js continues to be the most popular front-end JavaScript library, widely adopted for building user interfaces.</p>
+        <h3>What is AJAX?</h3>
+        <p>AJAX allows web pages to update asynchronously by exchanging data with a server in the background without reloading the page.</p>
+        <h3>Why do you put your JS Code in a separate file?</h3>
+        <p>It improves readability, reusability, and maintainability while keeping HTML clean.</p>
     </main>
 
     <footer>
@@ -78,7 +74,7 @@
     </footer>
     <script>
         document.getElemenById('myFrom').addEventListener('submit',function(event){
-            event.preventDefault();
+                        event.preventDefault();
             alert("Form Submitted")
 
             const fullname = document.getElementById('fullname').value;
@@ -100,8 +96,18 @@
                 email: email,
                 password: pass
             }
-            console.log(fullname);
-            
+            console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET","submit.json",true);
+            xhr.setRequestHeader("Content-Type","application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readystate === 4 && xhr.status === 200) {
+                    alert('Form submitted successfully.');
+                } else if (xhr.readyState === 4) {
+                    alert('Error submitting form.');
+                }
+            }
+            xhr.send(JSON.stringify(formData))
         });
     </script>
 </body>
