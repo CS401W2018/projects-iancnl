@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From Processing</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <header>
+        <h1>From Processing</h1>
+    </header>
+
+    <main>
+        <form action="processing.html" method="post">
+            <fieldset>
+                <legend>Account Info</legend>
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" name="fullname" placeholder="Full Name" id="fullname">
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-row">
+                    <label for="age">Age:</label>
+                    <input type="age" id="age" name="age">
+                </div>
+                <div class="form-row">
+                    <label for="pass">Password:</label>
+                    <input type="password" id="pass" name="password">
+                </div>
+                
+                <div class="radio-row">
+                    <label for="state">State:</label>
+                    <select name="state" id="state" required>
+                        <option value="" disabled selected>Select a state</option>
+                        <option value="CO">Colorado</option>
+                        <option value="HI">Hawaii</option>
+                        <option value="UT">Utah</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <label><input type="checkbox" name="agree" checked>Remember</label>
+                </div>
+
+                <div class="form-row">
+                    <label form="comments">Comments:</label>
+                    <textarea name="comments" id="comments"></textarea>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-spacer"></div>
+                    <input type="submit" value="Submit">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ian Chong&copy; BYU-Hawaii Web Design</p>
+    </footer>
+    <script>
+        document.getElemenById('myFrom').addEventListener('submit',function(event){
+            event.preventDefault();
+            const fullname = document.getElementById('fullname').value;
+            const email = document.getElementById('email').value;
+            const pass = document.getElementById('age').value;
+
+            if (!fullname) {
+                alert("you need to enter your name.");
+                return;
+            }
+            if (!email) {
+                alert("Please enter your email.");
+                return;
+            }   
+            if (!age || age<18) {
+                alert("You must be 18 years or older to submit this form");
+                return;
+            }
+
+            const formData = {
+                fullame: fullname,
+                email: email,
+                age: age
+            }
+            console.log(formData);
+            const xhr = new XMLHttpRequest();
+            xhr.open("GET","submit.json",true);
+            xhr.setRequestHeader("Content-Type","application/json;charset=UTF-8");
+            xhr.onreadystatechange = function () {
+                if (xhr.readystate === 4 && xhr.status === 200) {
+                    alert('Form submitted successfully.');
+                } else if (xhr.readyState === 4) {
+                    alert('Error submitting form.');
+                }
+            }
+            xhr.send(JSON.stringify(formData))
+        });
+    </script>
