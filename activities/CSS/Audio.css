@@ -1,0 +1,28 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#byuhcampus {
+    width: 350px;
+    margin: 0;
+    border: thin solid black;
+    box-shadow: 5px 5px 3px rgba(200, 200, 200, 50);
+    transform: translate(150px, 50px);
+}
+
+#byuhcampus ing {
+    width: 100px;
+}
+
+.btn {
+    display: block;
+    padding: 10px;
+    color:aqua;
+    background-color: #3443EE;
+    width: 110px;
+    text-align: center;
+}
+
+iframe {
+    border: 0;
+}
