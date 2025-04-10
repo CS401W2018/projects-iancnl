@@ -45,10 +45,10 @@ nav a{
 .card {
     text-align: center;
     background-image: url('Seattle.jpeg');
-    box-shadow: 5px 5px 5px rgb(46, 33, 117);
+    box-shadow: 5px 5px 5px rgb(33, 15, 133);
     padding: 20px;
     transition: transform 0.3s ease-in-out;
-    color:rgb(102, 130, 192);
+    color:rgb(118, 228, 27);
     font-size: 30px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -60,10 +60,7 @@ nav a{
     padding: 20px;
     transition: transform 0.3s ease-in-out;
     font-size: 30px;
-    background-image: url('Temple.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    color:#940a00b2; ;
+    color:#04e9ddb2; ;
 }
 .profile{
     text-align: center;
@@ -90,4 +87,11 @@ footer{
     button {
         font-size: 1.2em;
     }
+}
+.mission {
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(18, 224, 11);
+    padding: 20px;
+    font-size: 30px;
+    color:#04e9ddb2; ;
 }
