@@ -5,25 +5,30 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed; 
     background-position: center;
-    color: #bceb13; 
+    color:#faf61db2; ;
 }
 
+nav a{
+    text-align: center;
+    font-size: 30px;
+}
 .life {
     border: 1px solid #e7d6d6;
+    text-align: center;
+
     box-shadow: 3px 3px 3px rgba(30,30,30,0.5);
-    caption-side: bottom;
     border-spacing: 0;
     border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for readability */
+    background-color: rgba(255, 255, 255, 0.8);
+    
 }
-
 .life th, .life td {
     border: thin solid #000;
-    background-color: rgb(29, 106, 173);
+    background-color: rgb(13, 12, 77);
     padding: 10px;
 }
 .life thead tr {
-    background-color: rgb(163, 214, 22);
+    background-color: rgb(163, 214, 24);
     color: #fff;
 }
 .life tfoot tr {
@@ -32,4 +37,57 @@ body {
 }
 .life tr {
     background-color: #999;
+}
+.container{
+    text-align: center;
+    font-size: 30px;
+}
+.card {
+    text-align: center;
+    background-image: url('Seattle.jpeg');
+    box-shadow: 5px 5px 5px rgb(46, 33, 117);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    color:rgb(102, 130, 192);
+    font-size: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.church{
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(46, 33, 117);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    font-size: 30px;
+    background-image: url('Temple.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#940a00b2; ;
+}
+.profile{
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(160, 221, 18);
+    padding: 20px;
+}
+footer{
+    font-size: 30px;
+}
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    label {
+        margin-bottom: 5px;
+    }
+    
+    button {
+        font-size: 1.2em;
+    }
 }
