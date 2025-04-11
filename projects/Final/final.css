@@ -13,14 +13,12 @@ nav a{
     font-size: 30px;
 }
 .life {
-    border: 1px solid #e7d6d6;
     text-align: center;
-
     box-shadow: 3px 3px 3px rgba(30,30,30,0.5);
     border-spacing: 0;
-    border-collapse: collapse;
-    background-color: rgba(255, 255, 255, 0.8);
-    
+    border-collapse: collapse; 
+    display: flex;
+    justify-content: center;
 }
 .life th, .life td {
     border: thin solid #000;
@@ -67,14 +65,71 @@ nav a{
     box-shadow: 5px 5px 5px rgb(160, 221, 18);
     padding: 20px;
 }
+fieldset {
+    border: 2px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
 footer{
     font-size: 30px;
+}
+
+.mission {
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(18, 224, 11);
+    padding: 20px;
+    font-size: 30px;
+    color:#04e9ddb2; ;
+}
+.Hawaii{
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(46, 33, 117);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    font-size: 30px;
+    color:#04e9ddb2; ;
+}
+span{
+    text-align: center;
+    font-size: 30px;
+}
+.sky{
+    text-align: center;
+    box-shadow: 5px 5px 5px rgb(46, 33, 117);
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    font-size: 30px;
+    color:#04e9ddb2; ;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media (max-width: 768px) {
     main {
         width: 90%;
     }
-    
+    nav {
+        display:flex;
+        flex-direction: column;
+    }
+    fieldset{
+        display:flex;
+        flex-direction: column;
+    }
     .form-row {
         flex-direction: column;
         align-items: flex-start;
@@ -87,11 +142,4 @@ footer{
     button {
         font-size: 1.2em;
     }
-}
-.mission {
-    text-align: center;
-    box-shadow: 5px 5px 5px rgb(18, 224, 11);
-    padding: 20px;
-    font-size: 30px;
-    color:#04e9ddb2; ;
 }
