@@ -83,12 +83,39 @@ button:hover {
     main {
         width: 90%;
     }
-    
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    fieldset {
+        border: 2px solid #ddd;
+        padding: 15px;
+        border-radius: 8px;
+    }
     .form-row {
         flex-direction: column;
         align-items: flex-start;
     }
+    legend {
+        font-weight: bold;
+        font-size: 1.2em;
+    }
     
+    .form-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    
+    input, select, textarea {
+        flex: 2;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1em;
+    }
     label {
         margin-bottom: 5px;
     }
