@@ -1,4 +1,4 @@
-document.getElementById('myFrom').addEventListener('submit',function(event){
+document.getElementById('myForm').addEventListener('submit',function(event){
     event.preventDefault();
     const fullname = document.getElementById('fullname').value;
     const email = document.getElementById('email').value;
